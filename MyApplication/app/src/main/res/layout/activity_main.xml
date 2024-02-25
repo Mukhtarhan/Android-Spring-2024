@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingStart="8dp"
+    tools:context=".MainActivity"
+    android:fontFamily="sans-serif-medium"
+    tools:ignore="RtlSymmetry">
+
+    <androidx.appcompat.widget.SearchView
+        android:id = "@+id/search"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        app:layout_constraintTop_toTopOf = "parent"
+        app:queryHint = "Search..."
+        app:iconifiedByDefault = "false"
+        app:background="@null"
+        android:focusableInTouchMode = "true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id = "@+id/recyclerView"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        app:layoutManager = "androidx.recyclerview.widget.LinearLayoutManager" />
+
+</LinearLayout>

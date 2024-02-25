@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:orientation = "vertical"
+    android:background="@drawable/border"
+    android:padding="8dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="8dp">
+
+    <ImageView
+        android:id="@+id/pizzaImage"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:src="@drawable/kombo1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pizzaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Pizza Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/pizzaDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Pizza Description"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/pizzaPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginStart="230dp"
+            android:backgroundTint="@color/shadoworange"
+            android:elevation="4dp"
+            android:textColor="@color/orange"
+            android:textSize="14sp"
+            android:text="KZT" />
+
+    </LinearLayout>
+
+</LinearLayout>

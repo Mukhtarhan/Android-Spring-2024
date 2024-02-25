@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fontFamily="sans-serif-medium">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/pizzaImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@drawable/wowkebab"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                app:layout_constraintStart_toStartOf="@id/pizzaImage"
+                android:onClick="goBack"
+                android:background="@drawable/baseline_arrow_back_24"
+                android:backgroundTint="@color/orange"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pizzaName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="Pizza" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/pizzaSizeDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey"
+                    tools:text="SizeDescription, " />
+
+                <TextView
+                    android:id="@+id/pizzaTestoDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="20dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey"
+                    tools:text="TestoDescription" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pizzaDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="20dp"
+                android:textSize="16sp"
+                tools:text="Description" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/button_corner"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="3dp"
+                android:gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
+
+                <Button
+                    android:id="@+id/smallBtn"
+                    android:onClick="smallSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Маленькая"
+                    android:textSize="15sp"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"/>
+                <Button
+                    android:id="@+id/mediumBtn"
+                    android:onClick="mediumSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Средняя"
+                    android:textSize="15sp"
+                    android:backgroundTint="@color/grey"
+                    android:textColor="@color/black" />
+                <Button
+                    android:id="@+id/largeBtn"
+                    android:onClick="largeSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Большая"
+                    android:textSize="15sp"
+                    android:backgroundTint="@color/grey"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/button_corner"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="3dp" >
+
+                <Button
+                    android:id="@+id/traditionalBtn"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:onClick="traditionalTesto"
+                    android:text="Традиционное"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="4dp"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"/>
+                <Button
+                    android:id="@+id/thinBtn"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:onClick="thinTesto"
+                    android:text="Тонкое"
+                    android:textSize="16sp"
+                    android:backgroundTint="@color/grey"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/orange"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/shadoworange"
+                android:text="Add to cart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
