@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e2a600"
+    tools:context=".AuthActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fdfdfd"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Войдите в аккаунт"/>
+
+    <EditText
+        android:id="@+id/user_login_auth"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColorHint="#6a6a6a"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#fdfdfd"
+        android:hint="Введите логин" />
+
+    <EditText
+        android:id="@+id/user_pass_auth"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColorHint="#6a6a6a"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#fdfdfd"
+        android:hint="Введите пароль" />
+
+    <Button
+        android:id="@+id/button_auth"
+        android:layout_width="220dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        android:textColor="#fff"
+        android:backgroundTint="#201E28"
+        android:text="Войти" />
+
+    <TextView
+        android:id="@+id/link_to_req"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fdfdfd"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:textSize="17dp"
+        android:text="Зарегистрироваться"/>
+
+</LinearLayout>
