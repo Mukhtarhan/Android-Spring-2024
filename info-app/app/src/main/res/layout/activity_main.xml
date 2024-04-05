@@ -6,9 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingTop="16dp"
-    android:paddingStart="8dp"
+    android:background="@color/sinii"
     tools:context=".MainActivity"
     tools:ignore="RtlSymmetry">
+
 
     <androidx.appcompat.widget.SearchView
         android:id = "@+id/search"
@@ -21,9 +22,10 @@
         android:focusableInTouchMode = "true" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id = "@+id/recyclerView"
-        android:layout_width = "match_parent"
-        android:layout_height = "wrap_content"
-        app:layoutManager = "androidx.recyclerview.widget.LinearLayoutManager" />
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
 </LinearLayout>
